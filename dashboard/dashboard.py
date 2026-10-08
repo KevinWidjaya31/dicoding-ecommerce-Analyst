@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-DATA_DIR = Path("dashboard_data")
+DATA_DIR = Path(__file__).resolve().parent / "dashboard_data"
 
 @st.cache_data
 def load_data():
@@ -122,7 +122,7 @@ fig_category = px.bar(
     title="Top 10 Product Categories by Revenue"
 )
 fig_category.update_layout(
-    xaxis_title="Revenue (R$)",
+    xaxis_title="Revenue",
     yaxis_title="Product Category"
 )
 st.plotly_chart(fig_category, use_container_width=True)
