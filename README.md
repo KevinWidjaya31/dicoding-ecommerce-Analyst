@@ -1,8 +1,8 @@
-# Brazilian E-Commerce Data Analysis
+# E-Commerce Data Analysis
 
 ## 📌 Project Overview
 
-Project ini merupakan analisis data Brazilian E-Commerce Public Dataset by Olist untuk memahami performa penjualan, kontribusi kategori produk, serta hubungan antara ketepatan waktu pengiriman dengan kepuasan pelanggan.
+Project ini merupakan analisis data E-Commerce Public Dataset untuk memahami performa penjualan, kontribusi kategori produk, serta hubungan antara ketepatan waktu pengiriman dengan kepuasan pelanggan.
 
 Analisis dilakukan menggunakan Python melalui proses **data gathering, data assessing, data cleaning, exploratory data analysis (EDA), dan business analysis**. Hasil analisis juga divisualisasikan dalam bentuk dashboard interaktif menggunakan Streamlit.
 
@@ -14,7 +14,7 @@ Project ini berfokus pada dua pertanyaan bisnis utama:
 
 ### Business Question 1
 
-**Bagaimana perkembangan total revenue dan jumlah order Olist secara bulanan selama periode September 2016 hingga Oktober 2018, dan kategori produk apa yang memberikan kontribusi revenue terbesar?**
+**Bagaimana perkembangan total revenue dan jumlah order secara bulanan selama periode September 2016 hingga Oktober 2018, dan kategori produk apa yang memberikan kontribusi revenue terbesar?**
 
 Analisis ini bertujuan untuk mengetahui perkembangan performa penjualan serta mengidentifikasi kategori produk yang memberikan kontribusi revenue terbesar.
 
@@ -30,20 +30,18 @@ Analisis ini bertujuan untuk mengetahui hubungan antara ketepatan waktu pengirim
 
 Dataset yang digunakan adalah:
 
-**Brazilian E-Commerce Public Dataset by Olist**
+**E-Commerce Public Dataset**
 
-Dataset berisi informasi mengenai transaksi e-commerce di Brazil, termasuk data order, customer, product, payment, review, dan seller.
+Dataset berisi informasi mengenai transaksi e-commerce, termasuk data order, customer, product, payment, review, dan seller.
 
 Dataset utama yang digunakan dalam analisis:
 
-* `olist_orders_dataset.csv`
-* `olist_order_items_dataset.csv`
-* `olist_products_dataset.csv`
-* `olist_order_reviews_dataset.csv`
-* `olist_customers_dataset.csv`
+* `orders_dataset.csv`
+* `order_items_dataset.csv`
+* `products_dataset.csv`
+* `order_reviews_dataset.csv`
+* `customers_dataset.csv`
 * `product_category_name_translation.csv`
-
-Dataset tidak disertakan dalam repository karena ukuran file dan ketentuan distribusi dataset. Dataset dapat diperoleh melalui platform Kaggle.
 
 ---
 
@@ -53,7 +51,7 @@ Analisis dilakukan melalui beberapa tahapan berikut.
 
 ### 1. Data Gathering
 
-Mengumpulkan dataset yang diperlukan dari Brazilian E-Commerce Public Dataset by Olist.
+Mengumpulkan dataset yang diperlukan dari E-Commerce Public Dataset.
 
 ### 2. Data Assessing
 
@@ -246,7 +244,7 @@ pip install -r requirements.txt
 Buka:
 
 ```text
-Olist_Final_Project.ipynb
+notebook.ipynb
 ```
 
 Notebook dapat dijalankan menggunakan Jupyter Notebook, JupyterLab, atau Google Colab.
